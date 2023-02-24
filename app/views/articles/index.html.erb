@@ -2,6 +2,9 @@
 
 <h1>Welcome to my first blog!</h1>
 
+<%= cl_image_tag("scl7elgrv7ch7mqxasd9",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %>
